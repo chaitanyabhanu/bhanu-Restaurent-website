@@ -1,0 +1,135 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    
+}
+
+:root{
+
+    --primarycolor:var(#212730);
+    --secondarycolor:var(#ffbe33);
+    --thirdcolor:var(#f0f1f2);
+
+
+
+
+    
+}
+/* 
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700 */
+
+/* .dancing-script-<uniquifier> {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+
+.navigationcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    background: url(/hero-bg.jpg);
+    background-size: cover;
+    background-position: fixed;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height:100vh;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+     width: 100%;
+    padding: 0.5rem;
+    margin: 1rem;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 10%;
+    color: #f0f1f2;
+    font-family: "Dancing Script", cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+.list{
+    width: 31%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    font-family: sans-serif;
+
+}
+
+.list li{
+    list-style: none;
+}
+.list a{
+    color: #f0f1f2;
+    text-decoration: none;
+    padding: 1.5rem;
+}
+
+.iconscontainer{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+    padding:0.5rem;
+    margin: 0.5rem;
+    flex-wrap: nowrap;
+    color: #f0f1f2;
+    font-size: 1rem;
+    width: 15%;
+}
+
+.ctnbtn{
+    background-color: #ffbe33;
+    color: #f0f1f2;
+    border-radius: 50rem;
+    font-size:1rem;
+    padding: 0.5rem;
+    font-weight: 400;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+#toggle ,label{
+    display: none;
+}
+
+
+/* media 1 */
+
+@media (max-width:1180px){
+    .list{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        padding: 20px;
+        margin-left: 20px;
+    }
+    
+    label{
+        display: block;
+        color: #f0f1f2;
+    }
+
+    #toggle:checked~.list{
+        display: flex;
+    }
+    .iconscontainer{
+        display:none;
+    }
+}
